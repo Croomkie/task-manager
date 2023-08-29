@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { CRUDTaskService } from '../services/crudtask.service';
 import { TaskFacadeComponent } from '../task-facade/task-facade.component';
 import { TaskFacadeService } from '../services/task-facade.service';
+import { HttpTestService } from '../services/http-test.service';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,6 @@ import { TaskFacadeService } from '../services/task-facade.service';
       { path: 'facade', component: TaskFacadeComponent },
     ]),
   ],
-  providers: [CRUDTaskService, TaskFacadeService],
+  providers: [CRUDTaskService, TaskFacadeService, HttpTestService],
 })
 export class TaskModule {}
