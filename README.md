@@ -16,3 +16,6 @@ ng generate c main-task
 ng generate component test --standalone
 ng generate pipe formatDate
 ng generate module task
+
+# Git 
+https://github.com/Croomkie/task-manager
