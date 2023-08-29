@@ -1,4 +1,4 @@
-<div *ngFor="let tache of tasklist">
+<div *ngFor="let tache of tasklist | async">
     <p>{{tache.titre}}</p>
     <p>{{tache.description}}</p>
     <p>{{tache.date!}}</p>

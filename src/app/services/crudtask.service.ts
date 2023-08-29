@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Task } from '../models/Task';
 import { State } from '../state';
+import { of } from 'rxjs';
 
 @Injectable()
 export class CRUDTaskService {
@@ -21,7 +22,7 @@ export class CRUDTaskService {
       date: '2021-04-12',
       etat: State.EN_COURS,
     });
-    return task;
+    return of(task);
   }
 
   deleteTask() {}
